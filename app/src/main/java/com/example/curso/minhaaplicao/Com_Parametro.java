@@ -51,7 +51,7 @@ public class Com_Parametro extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-ListadePessoas = (ListView)findViewById(R.id.lista);
+ListadePessoas = (ListView)findViewById(R.id.listar);
         Pesquisar = (Button)findViewById(R.id.button2);
         Pesquisar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,7 +128,7 @@ ListadePessoas.setOnItemClickListener(new ItemClickedListener());
                 ArrayAdapter<Pessoas> adapter = new ArrayAdapter<Pessoas>(
                         Com_Parametro.this,
                         android.R.layout.simple_list_item_1, result);
-                //listaclientes.setAdapter(adapter);
+               ListadePessoas.setAdapter(adapter);
             } else {
                 AlertDialog.Builder builder = new AlertDialog.Builder(
                         Com_Parametro.this)
