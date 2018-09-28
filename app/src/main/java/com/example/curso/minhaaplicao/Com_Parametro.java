@@ -51,7 +51,7 @@ public class Com_Parametro extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
+ListadePessoas = (ListView)findViewById(R.id.lista);
         Pesquisar = (Button)findViewById(R.id.button2);
         Pesquisar.setOnClickListener(new View.OnClickListener() {
             @Override
