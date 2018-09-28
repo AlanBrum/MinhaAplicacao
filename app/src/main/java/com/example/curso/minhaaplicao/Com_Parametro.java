@@ -61,7 +61,7 @@ ListadePessoas = (ListView)findViewById(R.id.listar);
                 //"http://10.0.2.2:3630/api/cliente/retornaclientes?tipo=json");
 
             }
-        });
+        }); //teste2
 
 ListadePessoas.setOnItemClickListener(new ItemClickedListener());
 
